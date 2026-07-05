@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy 10th Anniversary ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Poppins,sans-serif;
+    background:linear-gradient(135deg,#ffdde1,#ee9ca7);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.container{
+    max-width:850px;
+    width:100%;
+    background:white;
+    padding:45px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+    animation:fadeIn 1.5s ease;
+}
+
+h1{
+    font-family:"Great Vibes",cursive;
+    text-align:center;
+    color:#e91e63;
+    font-size:3.3rem;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#888;
+}
+
+p{
+    line-height:1.9;
+    color:#444;
+    margin-bottom:18px;
+    font-size:17px;
+}
+
+button{
+    display:block;
+    margin:30px auto;
+    padding:14px 30px;
+    border:none;
+    background:#e91e63;
+    color:white;
+    border-radius:50px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+#hiddenMessage{
+    display:none;
+    margin-top:30px;
+    padding:25px;
+    background:#fff0f5;
+    border-left:6px solid #e91e63;
+    border-radius:12px;
+}
+
+/* SLIDER */
+.slider{
+    position:relative;
+    max-width:500px;
+    margin:30px auto;
+}
+
+.slides{
+    position:relative;
+    width:100%;
+    height:350px;
+}
+
+.slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:0;
+    transition:opacity 1.2s ease-in-out;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.slide.active{
+    opacity:1;
+}
+
+.prev,.next{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:#e91e63;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    cursor:pointer;
+    border-radius:50%;
+}
+
+.prev{ left:-20px; }
+.next{ right:-20px; }
+
+/* HEARTS */
+#hearts{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    overflow:hidden;
+}
+
+.heart{
+    position:absolute;
+    color:#ff4d88;
+    animation:float 8s linear forwards;
+}
+.signature h2{
+    font-family:"Great Vibes",cursive;
+    text-align:center;
+    color:#e91e63;
+    font-size:3rem;
+    margin-top:40px;
+}
+
+@keyframes float{
+0%{transform:translateY(100vh) scale(.5);opacity:0;}
+20%{opacity:1;}
+100%{transform:translateY(-120px) scale(1.5);opacity:0;}
+}
+
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(20px);}
+to{opacity:1;transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<div id="hearts"></div>
+
+<div class="container">
+
+<h1>Happy 10th Anniversary ❤️</h1>
+
+<p class="subtitle">To the love of my life</p>
+
+<p><strong>My Love,</strong></p>
+
+<p>
+Ten years. It still amazes me how far we've come. From being high school sweethearts to building our own family together, we've shared countless memories, faced many challenges, and celebrated so many blessings.
+</p>
+
+<p>
+Through every joyful moment, every hardship, every misunderstanding, and every victory, you've always been by my side. I thank God every single day for giving me someone as wonderful as you.
+</p>
+
+<p>
+Thank you for everything you've done for me and for our daughter. Thank you for every sacrifice, every sleepless night, every smile, and every act of love you've given to our family.
+</p>
+
+<p>
+Thank you for believing in me, even when I struggled to believe in myself. Your patience, kindness, and unconditional love have made me a better husband, a better father, and a better person.
+</p>
+
+<p>
+I'm also sorry for the times I've hurt you, especially when I became stubborn or raised my voice. You deserved better, and I promise to keep growing into the husband you deserve.
+</p>
+
+<p>
+No matter how much life changes us, one thing never will my love for you and our daughter. You are my greatest blessing, my peace, my home, and my forever.
+</p>
+
+<p>
+As we celebrate our tenth anniversary, I pray that we continue choosing each other every single day and grow old together, hand in hand, for the rest of our lives.
+</p>
+
+<p>
+You will always be my best friend, my greatest supporter, the amazing mother of our daughter, and the love of my life.
+</p>
+
+<p>
+Happy 10th Anniversary, my love.
+</p>
+
+<button onclick="showMessage()">❤️ Tap Here ❤️</button>
+
+<div id="hiddenMessage">
+
+<h2 style="color:#e91e63;text-align:center;">A Secret Just For You</h2>
+
+<p style="text-align:center;font-size:20px;">If I had another lifetime, I would still find you...</p>
+<p style="text-align:center;font-size:20px;">I would still fall in love with you...</p>
+<p style="text-align:center;font-size:20px;">I would still marry you...</p>
+<p style="text-align:center;font-size:20px;">And I would still choose you every single day.</p>
+
+<h2 style="text-align:center;color:#e91e63;margin-top:25px;">
+❤️ I Love You Always and Forever ❤️
+</h2>
+
+</div>
+
+<div class="signature">
+
+<h2>Forever Yours,</h2>
+
+<p style="text-align:center; margin-top:10px;">
+Your Husband ❤️
+</p>
+
+</div>
+
+<!-- SLIDER -->
+<div class="slider">
+<button class="prev" onclick="moveSlide(-1)">❮</button>
+
+<div class="slides">
+<img src="ako1.jpg" class="slide active">
+<img src="ako2.jpg" class="slide">
+<img src="ako3.jpg" class="slide">
+<img src="ako5.jpg" class="slide">
+<img src="ako6.jpg" class="slide">
+<img src="ako7.jpg" class="slide">
+<img src="ako8.jpg" class="slide">
+<img src="ako9.jpg" class="slide">
+<img src="ako10.jpg" class="slide">
+<img src="ako11.jpg" class="slide">
+</div>
+
+<button class="next" onclick="moveSlide(1)">❯</button>
+</div>
+
+</div>
+
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function showMessage(){
+    const message = document.getElementById("hiddenMessage");
+    const music = document.getElementById("bgMusic");
+
+    music.volume = 0.3;
+    if(music.paused) music.play().catch(()=>{});
+
+    message.style.display = message.style.display==="block" ? "none" : "block";
+}
+
+/* SLIDER */
+let currentSlide = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlide(index){
+    if(index >= slides.length) currentSlide = 0;
+    else if(index < 0) currentSlide = slides.length - 1;
+    else currentSlide = index;
+
+    slides.forEach(s => s.classList.remove("active"));
+    slides[currentSlide].classList.add("active");
+}
+
+function moveSlide(dir){
+    showSlide(currentSlide + dir);
+}
+
+setInterval(() => {
+    showSlide(currentSlide + 1);
+}, 3500);
+
+showSlide(currentSlide);
+
+/* HEARTS */
+function createHeart(){
+
+    const heart = document.createElement("div");
+    const emojis = ["❤️","💕","💖","💗","💘","✨","🌹"];
+
+    heart.innerHTML = emojis[Math.floor(Math.random()*emojis.length)];
+    heart.classList.add("heart");
+
+    heart.style.left = Math.random()*100 + "vw";
+    heart.style.fontSize = (12 + Math.random()*18) + "px";
+    heart.style.animationDuration = (6 + Math.random()*5) + "s";
+
+    document.getElementById("hearts").appendChild(heart);
+
+    setTimeout(()=>heart.remove(),10000);
+}
+
+setInterval(createHeart,1200);
+</script>
+
+</body>
+</html>
